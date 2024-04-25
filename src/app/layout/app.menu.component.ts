@@ -15,11 +15,21 @@ export class AppMenuComponent implements OnInit {
   ngOnInit() {
     this.model = [
       {
+        label: 'Home',
+        items: [
+          {
+            label: 'Dashboard',
+            icon: 'pi pi-fw pi-home',
+            routerLink: '/'
+          }
+        ]
+      },
+      {
         label: 'Unstitched',
         items: [
           {
             label: 'Basic',
-            routerLink: ['/']
+            routerLink: ['/basic']
           },
           {
             label: 'Luxury',
@@ -34,27 +44,7 @@ export class AppMenuComponent implements OnInit {
             routerLink: ['/fancy']
           },
         ]
-      },
-      // {
-      // 	label: 'Luxury',
-      // 	items: [
-      // 		{
-      // 			label: 'Luxury',
-      // 			icon: 'pi pi-fw pi-home',
-      // 			routerLink: ['/']
-      // 		}
-      // 	]
-      // },
-      // {
-      // 	label: 'Embroideries',
-      // 	items: [
-      // 		{
-      // 			label: 'Embroideries',
-      // 			icon: 'pi pi-fw pi-home',
-      // 			routerLink: ['/']
-      // 		}
-      // 	]
-      // }
+      }
     ];
   }
 }
