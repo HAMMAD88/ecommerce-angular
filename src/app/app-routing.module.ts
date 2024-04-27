@@ -10,7 +10,23 @@ const routes: Routes = [
             {
                 path: '',
                 loadChildren: () => import('./components/landing/landing.module').then((m) => m.LandingModule)
-            }
+            },
+            {
+                path: 'basic',
+                loadChildren: () => import('./components/item-collection-modules/basic/basic.module').then((m) => m.BasicModule)
+            },
+            {
+                path: 'luxury',
+                loadChildren: () => import('./components/item-collection-modules/luxury/luxury.module').then((m) => m.LuxuryModule)
+            },
+            {
+                path: 'fancy',
+                loadChildren: () => import('./components/item-collection-modules/fancy/fancy.module').then((m) => m.FancyModule)
+            },
+            {
+                path: 'embroided',
+                loadChildren: () => import('./components/item-collection-modules/embroided/embroided.module').then((m) => m.EmbroidedModule)
+            },
         ]
     },
     {
