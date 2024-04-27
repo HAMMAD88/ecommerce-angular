@@ -15,34 +15,13 @@ import { RouterModule } from '@angular/router';
 import { AppTopBarComponent } from './app.topbar.component';
 import { AppFooterComponent } from './app.footer.component';
 import { AppConfigModule } from './config/config.module';
-import { AppSidebarComponent } from "./app.sidebar.component";
-import { AppLayoutComponent } from "./app.layout.component";
+import { AppSidebarComponent } from './app.sidebar.component';
+import { AppLayoutComponent } from './app.layout.component';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
-    declarations: [
-        AppMenuitemComponent,
-        AppTopBarComponent,
-        AppFooterComponent,
-        AppMenuComponent,
-        AppSidebarComponent,
-        AppLayoutComponent,
-    ],
-    imports: [
-        BrowserModule,
-        FormsModule,
-        HttpClientModule,
-        BrowserAnimationsModule,
-        InputTextModule,
-        SidebarModule,
-        BadgeModule,
-        RadioButtonModule,
-        InputSwitchModule,
-        RippleModule,
-        RouterModule,
-        CommonModule,
-        AppConfigModule
-    ],
+    declarations: [AppMenuitemComponent, AppTopBarComponent, AppFooterComponent, AppMenuComponent, AppSidebarComponent, AppLayoutComponent],
+    imports: [BrowserModule, FormsModule, HttpClientModule, BrowserAnimationsModule, InputTextModule, SidebarModule, BadgeModule, RadioButtonModule, InputSwitchModule, RippleModule, RouterModule, CommonModule, AppConfigModule],
     exports: [AppLayoutComponent]
 })
-export class AppLayoutModule { }
+export class AppLayoutModule {}

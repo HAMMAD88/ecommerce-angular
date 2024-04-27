@@ -4,7 +4,7 @@ import { MenuService } from '../app.menu.service';
 
 @Component({
     selector: 'app-config',
-    templateUrl: './app.config.component.html',
+    templateUrl: './app.config.component.html'
 })
 export class AppConfigComponent {
     @Input() minimal: boolean = false;
@@ -29,7 +29,7 @@ export class AppConfigComponent {
     set scale(_val: number) {
         this.layoutService.config.update((config) => ({
             ...config,
-            scale: _val,
+            scale: _val
         }));
     }
 
@@ -39,7 +39,7 @@ export class AppConfigComponent {
     set menuMode(_val: string) {
         this.layoutService.config.update((config) => ({
             ...config,
-            menuMode: _val,
+            menuMode: _val
         }));
     }
 
@@ -56,14 +56,14 @@ export class AppConfigComponent {
     set ripple(_val: boolean) {
         this.layoutService.config.update((config) => ({
             ...config,
-            ripple: _val,
+            ripple: _val
         }));
     }
 
     set theme(val: string) {
         this.layoutService.config.update((config) => ({
             ...config,
-            theme: val,
+            theme: val
         }));
     }
     get theme(): string {
@@ -73,7 +73,7 @@ export class AppConfigComponent {
     set colorScheme(val: string) {
         this.layoutService.config.update((config) => ({
             ...config,
-            colorScheme: val,
+            colorScheme: val
         }));
     }
     get colorScheme(): string {

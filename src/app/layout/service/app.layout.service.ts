@@ -20,7 +20,7 @@ interface LayoutState {
 }
 
 @Injectable({
-    providedIn: 'root',
+    providedIn: 'root'
 })
 export class LayoutService {
     _config: AppConfig = {
@@ -29,7 +29,7 @@ export class LayoutService {
         menuMode: 'static',
         colorScheme: 'light',
         theme: 'lara-light-indigo',
-        scale: 14,
+        scale: 14
     };
 
     config = signal<AppConfig>(this._config);
@@ -40,7 +40,7 @@ export class LayoutService {
         profileSidebarVisible: false,
         configSidebarVisible: false,
         staticMenuMobileActive: false,
-        menuHoverActive: false,
+        menuHoverActive: false
     };
 
     private configUpdate = new Subject<AppConfig>();
@@ -63,10 +63,7 @@ export class LayoutService {
     }
 
     updateStyle(config: AppConfig) {
-        return (
-            config.theme !== this._config.theme ||
-            config.colorScheme !== this._config.colorScheme
-        );
+        return config.theme !== this._config.theme || config.colorScheme !== this._config.colorScheme;
     }
 
     onMenuToggle() {
@@ -78,11 +75,9 @@ export class LayoutService {
         }
 
         if (this.isDesktop()) {
-            this.state.staticMenuDesktopInactive =
-                !this.state.staticMenuDesktopInactive;
+            this.state.staticMenuDesktopInactive = !this.state.staticMenuDesktopInactive;
         } else {
-            this.state.staticMenuMobileActive =
-                !this.state.staticMenuMobileActive;
+            this.state.staticMenuMobileActive = !this.state.staticMenuMobileActive;
 
             if (this.state.staticMenuMobileActive) {
                 this.overlayOpen.next(null);
@@ -124,13 +119,7 @@ export class LayoutService {
         const themeLinkHref = themeLink.getAttribute('href')!;
         const newHref = themeLinkHref
             .split('/')
-            .map((el) =>
-                el == this._config.theme
-                    ? (el = config.theme)
-                    : el == `theme-${this._config.colorScheme}`
-                    ? (el = `theme-${config.colorScheme}`)
-                    : el
-            )
+            .map((el) => (el == this._config.theme ? (el = config.theme) : el == `theme-${this._config.colorScheme}` ? (el = `theme-${config.colorScheme}`) : el))
             .join('/');
 
         this.replaceThemeLink(newHref);
@@ -143,10 +132,7 @@ export class LayoutService {
         cloneLinkElement.setAttribute('href', href);
         cloneLinkElement.setAttribute('id', id + '-clone');
 
-        themeLink.parentNode!.insertBefore(
-            cloneLinkElement,
-            themeLink.nextSibling
-        );
+        themeLink.parentNode!.insertBefore(cloneLinkElement, themeLink.nextSibling);
         cloneLinkElement.addEventListener('load', () => {
             themeLink.remove();
             cloneLinkElement.setAttribute('id', id);
