@@ -1,3 +1,6 @@
 <div class="card">
-    this is the landing page and here should be all the images for the menu that needs to be displayed
+    <carousel
+        *ngFor="let item of items"
+        [carouselItem]="item"
+    ></carousel>
 </div>

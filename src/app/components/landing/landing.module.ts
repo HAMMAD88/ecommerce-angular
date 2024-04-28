@@ -7,9 +7,10 @@ import { DividerModule } from 'primeng/divider';
 import { ChartModule } from 'primeng/chart';
 import { PanelModule } from 'primeng/panel';
 import { ButtonModule } from 'primeng/button';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
-    imports: [CommonModule, LandingRoutingModule, DividerModule, StyleClassModule, ChartModule, PanelModule, ButtonModule],
+    imports: [CommonModule, LandingRoutingModule, DividerModule, StyleClassModule, ChartModule, PanelModule, ButtonModule, SharedModule],
     declarations: [LandingComponent]
 })
 export class LandingModule {}

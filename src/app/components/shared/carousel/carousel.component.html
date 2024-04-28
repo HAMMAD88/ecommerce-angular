@@ -1,0 +1,50 @@
+<p-carousel
+    [value]="carouselItem.children"
+    [numVisible]="1"
+    [indicatorsContentClass]="'pb-0 pt-1'"
+    [showIndicators]="carouselItem.children.length !== 1"
+    [showNavigators]="carouselItem.children.length !== 1"
+    [indicatorStyleClass]="'small-indicators'"
+    styleClass="carousel-bg border-1 surface-border border-round-xl p-2"
+    [contentClass]="carouselItem.children.length === 1 ? 'margin-1-child' : ''"
+    (onPage)="onPageChange($event)"
+    [circular]="true"
+>
+    <ng-template pTemplate="header">
+        <ng-container *ngTemplateOutlet="carouselHeader || defaultHeader"></ng-container>
+        <ng-template #defaultHeader>
+            <div class="flex justify-content-between gap-1 align-items-center mb-1">
+                <span class="text-xl text-primary">
+                    {{ carouselItem.title }}
+                </span>
+            </div>
+        </ng-template>
+    </ng-template>
+
+    <ng-template
+        let-item
+        pTemplate="item"
+    >
+        <ng-container *ngTemplateOutlet="carouselBody || defaultBody"></ng-container>
+        <ng-template #defaultBody>
+            <div
+                class="mt-2"
+                [style.min-height]="childHeight + 'px'"
+                [style.max-height]="childHeight + 'px'"
+                [style.height]="childHeight + 'px'"
+            >
+                <img
+                    class="w-full"
+                    [src]="item.templateContent"
+                    alt="product-image"
+                />
+            </div>
+        </ng-template>
+    </ng-template>
+
+    <!-- buttons -->
+    <ng-template pTemplate="footer">
+        <ng-container *ngTemplateOutlet="carouselFooter || defaultFooter"></ng-container>
+        <ng-template #defaultFooter> </ng-template>
+    </ng-template>
+</p-carousel>
