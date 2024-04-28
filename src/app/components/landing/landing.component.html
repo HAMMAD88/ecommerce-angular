@@ -1,6 +1,10 @@
-<div class="card">
-    <carousel
-        *ngFor="let item of items"
-        [carouselItem]="item"
-    ></carousel>
+<div class="card no-card-small-screen">
+    <div class="grid">
+        <div
+            *ngFor="let item of items"
+            class="col-12 lg:col-4 "
+        >
+            <carousel [carouselItem]="item"></carousel>
+        </div>
+    </div>
 </div>

@@ -3,6 +3,7 @@ import { Component, Input, TemplateRef } from '@angular/core';
 export interface CarouselModel {
     id: number;
     title: string;
+    price: number;
     children: CoruselChild[];
 }
 
@@ -20,7 +21,7 @@ export class CarouselComponent {
     @Input() carouselHeader!: TemplateRef<any>;
     @Input() carouselFooter!: TemplateRef<any>;
     @Input() carouselBody!: TemplateRef<any>;
-    @Input() childHeight: string = '600';
+    @Input() childHeight: string = '300';
 
     carouselPageNumber: number = 0;
 

@@ -9,15 +9,14 @@
     [contentClass]="carouselItem.children.length === 1 ? 'margin-1-child' : ''"
     (onPage)="onPageChange($event)"
     [circular]="true"
+    [autoplayInterval]="4000"
 >
     <ng-template pTemplate="header">
         <ng-container *ngTemplateOutlet="carouselHeader || defaultHeader"></ng-container>
         <ng-template #defaultHeader>
-            <div class="flex justify-content-between gap-1 align-items-center mb-1">
-                <span class="text-xl text-primary">
-                    {{ carouselItem.title }}
-                </span>
-            </div>
+            <!-- <div class="flex justify-content-between gap-1 align-items-center mb-1">
+
+            </div> -->
         </ng-template>
     </ng-template>
 
@@ -34,6 +33,7 @@
                 [style.height]="childHeight + 'px'"
             >
                 <img
+                    style="aspect-ratio: 3/4;"
                     class="w-full"
                     [src]="item.templateContent"
                     alt="product-image"
@@ -45,6 +45,15 @@
     <!-- buttons -->
     <ng-template pTemplate="footer">
         <ng-container *ngTemplateOutlet="carouselFooter || defaultFooter"></ng-container>
-        <ng-template #defaultFooter> </ng-template>
+        <ng-template #defaultFooter>
+            <div class="flex flex-column ml-3">
+                <span class="text-xl text-primary">
+                    {{ carouselItem.title }}
+                </span>
+                <span class="text-md text-primary">
+                    {{carouselItem.price}} PKR
+                </span>
+            </div>
+        </ng-template>
     </ng-template>
 </p-carousel>
