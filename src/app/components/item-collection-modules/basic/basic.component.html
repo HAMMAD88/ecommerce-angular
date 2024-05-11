@@ -1,1 +1,8 @@
-<p>basic works!</p>
+<div class="grid">
+  <div
+      *ngFor="let item of items"
+      class="col-12 lg:col-4"
+  >
+      <carousel [carouselItem]="item"></carousel>
+  </div>
+</div>
