@@ -4,7 +4,7 @@ import { FancyComponent } from './fancy.component';
 import { FancyRoutingModule } from './fancy-routing.module';
 
 @NgModule({
-    imports: [CommonModule, FancyRoutingModule],
-    declarations: [FancyComponent]
+  imports: [CommonModule, FancyRoutingModule],
+  declarations: [FancyComponent]
 })
 export class FancyModule {}

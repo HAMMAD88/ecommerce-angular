@@ -7,9 +7,9 @@ import { CommonModule } from '@angular/common';
 import { AppLayoutModule } from './layout/app.layout.module';
 
 @NgModule({
-    declarations: [AppComponent],
-    imports: [BrowserModule, AppRoutingModule, AppLayoutModule, CommonModule],
-    providers: [],
-    bootstrap: [AppComponent]
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule, AppLayoutModule, CommonModule],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

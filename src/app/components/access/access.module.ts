@@ -6,7 +6,7 @@ import { AccessRoutingModule } from './access-routing.module';
 import { AccessComponent } from './access.component';
 
 @NgModule({
-    imports: [CommonModule, AccessRoutingModule, ButtonModule],
-    declarations: [AccessComponent]
+  imports: [CommonModule, AccessRoutingModule, ButtonModule],
+  declarations: [AccessComponent]
 })
 export class AccessModule {}
