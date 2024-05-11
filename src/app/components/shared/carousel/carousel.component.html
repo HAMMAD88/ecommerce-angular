@@ -3,7 +3,7 @@
   [numVisible]="1"
   [indicatorsContentClass]="'pb-0 pt-1'"
   [showIndicators]="carouselItem.children.length !== 1"
-  [showNavigators]="carouselItem.children.length !== 1"
+  [showNavigators]="carouselItem.children.length !== 1 && showSwitchers"
   [indicatorStyleClass]="'small-indicators'"
   styleClass="carousel-bg border-1 surface-border border-round-xl p-2"
   [contentClass]="carouselItem.children.length === 1 ? 'margin-1-child' : ''"
