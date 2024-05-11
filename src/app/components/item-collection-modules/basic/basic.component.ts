@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CarouselModel } from '../../shared/carousel/carousel.component';
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'app-basic',
@@ -18,34 +19,34 @@ export class BasicComponent implements OnInit {
         price: 5000,
         children: [
           {
-            templateContent: './../../../assets/suits/1.jpg'
+            templateContent: environment.baseHref + '/assets/suits/1.jpg'
           },
           {
-            templateContent: './../../../assets/suits/2.jpg'
+            templateContent: environment.baseHref + '/assets/suits/2.jpg'
           },
           {
-            templateContent: './../../../assets/suits/3.jpg'
+            templateContent: environment.baseHref + '/assets/suits/3.jpg'
           },
           {
-            templateContent: './../../../assets/suits/4.jpg'
+            templateContent: environment.baseHref + '/assets/suits/4.jpg'
           },
           {
-            templateContent: './../../../assets/suits/5.jpg'
+            templateContent: environment.baseHref + '/assets/suits/5.jpg'
           },
           {
-            templateContent: './../../../assets/suits/6.jpg'
+            templateContent: environment.baseHref + '/assets/suits/6.jpg'
           },
           {
-            templateContent: './../../../assets/suits/7.jpg'
+            templateContent: environment.baseHref + '/assets/suits/7.jpg'
           },
           {
-            templateContent: './../../../assets/suits/8.jpg'
+            templateContent: environment.baseHref + '/assets/suits/8.jpg'
           },
           {
-            templateContent: './../../../assets/suits/9.jpg'
+            templateContent: environment.baseHref + '/assets/suits/9.jpg'
           },
           {
-            templateContent: './../../../assets/suits/10.jpg'
+            templateContent: environment.baseHref + '/assets/suits/10.jpg'
           }
         ]
       },
@@ -55,10 +56,10 @@ export class BasicComponent implements OnInit {
         title: 'Cotton',
         children: [
           {
-            templateContent: './../../../assets/suits/3.jpg'
+            templateContent: environment.baseHref + '/assets/suits/3.jpg'
           },
           {
-            templateContent: './../../../assets/suits/4.jpg'
+            templateContent: environment.baseHref + '/assets/suits/4.jpg'
           }
         ]
       },
@@ -68,10 +69,10 @@ export class BasicComponent implements OnInit {
         title: 'Silk',
         children: [
           {
-            templateContent: './../../../assets/suits/5.jpg'
+            templateContent: environment.baseHref + '/assets/suits/5.jpg'
           },
           {
-            templateContent: './../../../assets/suits/6.jpg'
+            templateContent: environment.baseHref + '/assets/suits/6.jpg'
           }
         ]
       },
@@ -81,10 +82,10 @@ export class BasicComponent implements OnInit {
         title: 'Boski',
         children: [
           {
-            templateContent: './../../../assets/suits/7.jpg'
+            templateContent: environment.baseHref + '/assets/suits/7.jpg'
           },
           {
-            templateContent: './../../../assets/suits/8.jpg'
+            templateContent: environment.baseHref + '/assets/suits/8.jpg'
           }
         ]
       }
