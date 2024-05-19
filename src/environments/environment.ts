@@ -1,10 +1,8 @@
-import { commonEnvironment } from "./environment.common"
+import { commonEnvironment } from './environment.common';
 
-const env: Partial<typeof commonEnvironment> ={
-
-}
+const env: Partial<typeof commonEnvironment> = {};
 
 export const environment = {
-  ...commonEnvironment,
-  ...env
-}
+    ...commonEnvironment,
+    ...env
+};

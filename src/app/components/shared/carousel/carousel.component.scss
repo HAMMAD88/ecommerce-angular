@@ -1,50 +1,50 @@
 :host::ng-deep {
-  .p-carousel .p-carousel-content .p-carousel-prev:enabled:focus,
-  .p-carousel .p-carousel-content .p-carousel-next:enabled:focus,
-  .p-carousel .p-carousel-content .p-carousel-prev:enabled:active,
-  .p-carousel .p-carousel-content .p-carousel-next:enabled:active {
-    outline: none;
-    box-shadow: none;
-  }
+    .p-carousel .p-carousel-content .p-carousel-prev:enabled:focus,
+    .p-carousel .p-carousel-content .p-carousel-next:enabled:focus,
+    .p-carousel .p-carousel-content .p-carousel-prev:enabled:active,
+    .p-carousel .p-carousel-content .p-carousel-next:enabled:active {
+        outline: none;
+        box-shadow: none;
+    }
 
-  .p-carousel .p-carousel-indicators li.p-carousel-indicator {
-    flex: 1;
-    max-width: 1rem;
-    margin-right: 0.2rem;
-  }
+    .p-carousel .p-carousel-indicators li.p-carousel-indicator {
+        flex: 1;
+        max-width: 1rem;
+        margin-right: 0.2rem;
+    }
 
-  .p-carousel .p-carousel-content .p-carousel-prev,
-  .p-carousel .p-carousel-content .p-carousel-next {
-    margin: 0;
-    max-width: 16px;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
+    .p-carousel .p-carousel-content .p-carousel-prev,
+    .p-carousel .p-carousel-content .p-carousel-next {
+        margin: 0;
+        max-width: 16px;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
 
-  .p-carousel .p-carousel-content :hover .p-carousel-prev,
-  .p-carousel .p-carousel-content :hover .p-carousel-next {
-    opacity: 1;
-    transition: opacity 0.5s ease;
-  }
+    .p-carousel .p-carousel-content :hover .p-carousel-prev,
+    .p-carousel .p-carousel-content :hover .p-carousel-next {
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
 
-  .small-indicators {
-    height: 4px !important;
-    width: -webkit-fill-available !important;
-    min-width: 11px;
-  }
+    .small-indicators {
+        height: 4px !important;
+        width: -webkit-fill-available !important;
+        min-width: 11px;
+    }
 
-  .margin-1-child {
-    margin-left: 16px;
-    margin-right: 16px;
-    margin-bottom: 15px;
-  }
+    .margin-1-child {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 15px;
+    }
 
-  .carousel-bg {
-    background-color: #eff3f8 !important;
-  }
+    .carousel-bg {
+        background-color: #eff3f8 !important;
+    }
 
-  .p-disabled,
-  .p-disabled * {
-    background-color: transparent !important;
-  }
+    .p-disabled,
+    .p-disabled * {
+        background-color: transparent !important;
+    }
 }

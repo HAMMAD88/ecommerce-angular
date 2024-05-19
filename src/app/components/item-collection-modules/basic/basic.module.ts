@@ -5,7 +5,7 @@ import { BasicRoutingModule } from './basic-routing.module';
 import { SharedModule } from './../../shared/shared.module';
 
 @NgModule({
-  imports: [CommonModule, BasicRoutingModule, SharedModule],
-  declarations: [BasicComponent]
+    imports: [CommonModule, BasicRoutingModule, SharedModule],
+    declarations: [BasicComponent]
 })
 export class BasicModule {}

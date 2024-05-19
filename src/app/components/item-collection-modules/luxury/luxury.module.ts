@@ -4,7 +4,7 @@ import { LuxuryComponent } from './luxury.component';
 import { LuxuryRoutingModule } from './luxury-routing.module';
 
 @NgModule({
-  imports: [CommonModule, LuxuryRoutingModule],
-  declarations: [LuxuryComponent]
+    imports: [CommonModule, LuxuryRoutingModule],
+    declarations: [LuxuryComponent]
 })
 export class LuxuryModule {}

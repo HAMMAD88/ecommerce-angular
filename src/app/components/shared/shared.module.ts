@@ -5,8 +5,8 @@ import { CarouselModule } from 'primeng/carousel';
 import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
-  imports: [CommonModule, ButtonModule, CarouselModule],
-  declarations: [CarouselComponent],
-  exports: [CarouselComponent]
+    imports: [CommonModule, ButtonModule, CarouselModule],
+    declarations: [CarouselComponent],
+    exports: [CarouselComponent]
 })
 export class SharedModule {}
