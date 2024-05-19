@@ -1,4 +1,4 @@
-<carousel
+<!-- <carousel
     [carouselItem]="dashboardItems[0]"
     [showFooter]="false"
     childHeight="600"
@@ -19,5 +19,39 @@
         <div class="bg-yellow-200 w-20rem h-20rem m-4 flex align-items-center justify-content-center">
             <span class="text-3xl">Basic</span>
         </div>
+    </div>
+</div> -->
+<div class="grid grid-nogutter surface-section text-800">
+    <div class="col-12 md:col-6 p-6 text-center md:text-left flex align-items-center">
+        <section>
+            <span class="block text-6xl font-bold mb-1">Elevate Your Style</span>
+            <div class="text-6xl text-primary font-bold mb-3">Discover the Essence of Modern Masculinity</div>
+            <p class="mt-0 mb-4 text-700 line-height-3">
+                Step into sophistication with our exclusive men's collection. From timeless classics to contemporary trends, our attire is crafted to perfection, ensuring you look your best for every occasion.
+            </p>
+
+            <button
+                pButton
+                pRipple
+                label="Learn More"
+                type="button"
+                class="mr-3 p-button-raised"
+            ></button>
+            <button
+                pButton
+                pRipple
+                label="Contact Us"
+                type="button"
+                class="p-button-outlined"
+            ></button>
+        </section>
+    </div>
+    <div class="col-12 md:col-6 overflow-hidden relative-landing">
+        <img
+            src="assets/suits/1.jpg"
+            alt="Image"
+            class="responsive-image"
+            style="clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%); width: 100%; height: auto; object-fit: cover"
+        />
     </div>
 </div>
