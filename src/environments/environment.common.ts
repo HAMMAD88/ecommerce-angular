@@ -1,3 +1,3 @@
 export const commonEnvironment = {
-    baseHref: './../../..'
+    baseHref: ''
 };
