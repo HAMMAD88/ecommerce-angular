@@ -24,4 +24,4 @@ import { DropdownModule } from 'primeng/dropdown';
     ],
     declarations: [CheckoutFormComponent]
 })
-export class CheckoutFormModule { }
+export class CheckoutFormModule {}

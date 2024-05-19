@@ -5053,11 +5053,26 @@
         color: #4b5563;
         background: #f3f4f6;
     }
-    .p-megamenu.p-megamenu-horizontal .p-megamenu-root-list > .p-menuitem:not(.p-highlight):not(.p-disabled) > .p-menuitem-content:hover .p-menuitem-link .p-menuitem-text {
+    .p-megamenu.p-megamenu-horizontal
+        .p-megamenu-root-list
+        > .p-menuitem:not(.p-highlight):not(.p-disabled)
+        > .p-menuitem-content:hover
+        .p-menuitem-link
+        .p-menuitem-text {
         color: #4b5563;
     }
-    .p-megamenu.p-megamenu-horizontal .p-megamenu-root-list > .p-menuitem:not(.p-highlight):not(.p-disabled) > .p-menuitem-content:hover .p-menuitem-link .p-menuitem-icon,
-    .p-megamenu.p-megamenu-horizontal .p-megamenu-root-list > .p-menuitem:not(.p-highlight):not(.p-disabled) > .p-menuitem-content:hover .p-menuitem-link .p-submenu-icon {
+    .p-megamenu.p-megamenu-horizontal
+        .p-megamenu-root-list
+        > .p-menuitem:not(.p-highlight):not(.p-disabled)
+        > .p-menuitem-content:hover
+        .p-menuitem-link
+        .p-menuitem-icon,
+    .p-megamenu.p-megamenu-horizontal
+        .p-megamenu-root-list
+        > .p-menuitem:not(.p-highlight):not(.p-disabled)
+        > .p-menuitem-content:hover
+        .p-menuitem-link
+        .p-submenu-icon {
         color: #6b7280;
     }
 
@@ -5343,13 +5358,46 @@
         .p-menubar .p-menubar-root-list .p-submenu-list .p-menuitem .p-submenu-list .p-menuitem .p-menuitem-content .p-menuitem-link {
             padding-left: 3.75rem;
         }
-        .p-menubar .p-menubar-root-list .p-submenu-list .p-menuitem .p-submenu-list .p-menuitem .p-submenu-list .p-menuitem .p-menuitem-content .p-menuitem-link {
+        .p-menubar
+            .p-menubar-root-list
+            .p-submenu-list
+            .p-menuitem
+            .p-submenu-list
+            .p-menuitem
+            .p-submenu-list
+            .p-menuitem
+            .p-menuitem-content
+            .p-menuitem-link {
             padding-left: 5.25rem;
         }
-        .p-menubar .p-menubar-root-list .p-submenu-list .p-menuitem .p-submenu-list .p-menuitem .p-submenu-list .p-menuitem .p-submenu-list .p-menuitem .p-menuitem-content .p-menuitem-link {
+        .p-menubar
+            .p-menubar-root-list
+            .p-submenu-list
+            .p-menuitem
+            .p-submenu-list
+            .p-menuitem
+            .p-submenu-list
+            .p-menuitem
+            .p-submenu-list
+            .p-menuitem
+            .p-menuitem-content
+            .p-menuitem-link {
             padding-left: 6.75rem;
         }
-        .p-menubar .p-menubar-root-list .p-submenu-list .p-menuitem .p-submenu-list .p-menuitem .p-submenu-list .p-menuitem .p-submenu-list .p-menuitem .p-submenu-list .p-menuitem .p-menuitem-content .p-menuitem-link {
+        .p-menubar
+            .p-menubar-root-list
+            .p-submenu-list
+            .p-menuitem
+            .p-submenu-list
+            .p-menuitem
+            .p-submenu-list
+            .p-menuitem
+            .p-submenu-list
+            .p-menuitem
+            .p-submenu-list
+            .p-menuitem
+            .p-menuitem-content
+            .p-menuitem-link {
             padding-left: 8.25rem;
         }
         .p-menubar.p-menubar-mobile-active .p-menubar-root-list {

@@ -8,16 +8,8 @@ import { TabViewModule } from 'primeng/tabview';
 import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
 @NgModule({
-	imports: [
-		CommonModule,
-		FormsModule,
-		InputNumberModule,
-		ButtonModule,
-		RippleModule,
-		TabViewModule,
-		ProductoverviewRoutingModule
-	],
+    imports: [CommonModule, FormsModule, InputNumberModule, ButtonModule, RippleModule, TabViewModule, ProductoverviewRoutingModule],
     declarations: [ProductOverviewComponent],
     exports: [ProductOverviewComponent]
 })
-export class ProductoverviewModule { }
+export class ProductoverviewModule {}

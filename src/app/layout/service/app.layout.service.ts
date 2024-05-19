@@ -119,7 +119,9 @@ export class LayoutService {
         const themeLinkHref = themeLink.getAttribute('href')!;
         const newHref = themeLinkHref
             .split('/')
-            .map((el) => (el == this._config.theme ? (el = config.theme) : el == `theme-${this._config.colorScheme}` ? (el = `theme-${config.colorScheme}`) : el))
+            .map((el) =>
+                el == this._config.theme ? (el = config.theme) : el == `theme-${this._config.colorScheme}` ? (el = `theme-${config.colorScheme}`) : el
+            )
             .join('/');
 
         this.replaceThemeLink(newHref);

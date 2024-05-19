@@ -21,7 +21,21 @@ import { CommonModule } from '@angular/common';
 
 @NgModule({
     declarations: [AppMenuitemComponent, AppTopBarComponent, AppFooterComponent, AppMenuComponent, AppSidebarComponent, AppLayoutComponent],
-    imports: [BrowserModule, FormsModule, HttpClientModule, BrowserAnimationsModule, InputTextModule, SidebarModule, BadgeModule, RadioButtonModule, InputSwitchModule, RippleModule, RouterModule, CommonModule, AppConfigModule],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        HttpClientModule,
+        BrowserAnimationsModule,
+        InputTextModule,
+        SidebarModule,
+        BadgeModule,
+        RadioButtonModule,
+        InputSwitchModule,
+        RippleModule,
+        RouterModule,
+        CommonModule,
+        AppConfigModule
+    ],
     exports: [AppLayoutComponent]
 })
 export class AppLayoutModule {}

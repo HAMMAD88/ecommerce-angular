@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
+    selector: 'product-list',
     templateUrl: './productlist.component.html'
 })
 export class ProductListComponent {
-
     color1: string = 'Bluegray';
 
-    products =  [
+    products = [
         {
             price: '$140.00',
             image: 'assets/demo/images/ecommerce/product-list/product-list-4-1.png'
@@ -34,23 +34,22 @@ export class ProductListComponent {
         }
     ];
 
-    products2 =  [
+    products2 = [
         {
             color: 'Bluegray',
-            image:'assets/demo/images/ecommerce/product-list/product-list-2-1.png'
+            image: 'assets/demo/images/ecommerce/product-list/product-list-2-1.png'
         },
         {
             color: 'Indigo',
-            image:'assets/demo/images/ecommerce/product-list/product-list-2-2.png'
+            image: 'assets/demo/images/ecommerce/product-list/product-list-2-2.png'
         },
         {
             color: 'Purple',
-            image:'assets/demo/images/ecommerce/product-list/product-list-2-3.png'
+            image: 'assets/demo/images/ecommerce/product-list/product-list-2-3.png'
         },
         {
             color: 'Cyan',
-            image:'assets/demo/images/ecommerce/product-list/product-list-2-4.png'
-        },
+            image: 'assets/demo/images/ecommerce/product-list/product-list-2-4.png'
+        }
     ];
-
 }

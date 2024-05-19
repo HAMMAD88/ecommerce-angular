@@ -5,11 +5,8 @@ import { ProductListComponent } from './productlist.component';
 import { RippleModule } from 'primeng/ripple';
 
 @NgModule({
-    imports: [
-        CommonModule,
-        ProductListRoutingModule,
-        RippleModule
-    ],
-    declarations: [ProductListComponent]
+    imports: [CommonModule, ProductListRoutingModule, RippleModule],
+    declarations: [ProductListComponent],
+    exports: [ProductListComponent]
 })
-export class ProductListModule { }
+export class ProductListModule {}

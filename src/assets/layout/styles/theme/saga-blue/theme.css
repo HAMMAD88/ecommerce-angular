@@ -1,6 +1,8 @@
 :root {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol';
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol';
     --surface-a: #ffffff;
     --surface-b: #f8f9fa;
     --surface-c: #e9ecef;
@@ -5119,11 +5121,26 @@
         color: #495057;
         background: #e9ecef;
     }
-    .p-megamenu.p-megamenu-horizontal .p-megamenu-root-list > .p-menuitem:not(.p-highlight):not(.p-disabled) > .p-menuitem-content:hover .p-menuitem-link .p-menuitem-text {
+    .p-megamenu.p-megamenu-horizontal
+        .p-megamenu-root-list
+        > .p-menuitem:not(.p-highlight):not(.p-disabled)
+        > .p-menuitem-content:hover
+        .p-menuitem-link
+        .p-menuitem-text {
         color: #495057;
     }
-    .p-megamenu.p-megamenu-horizontal .p-megamenu-root-list > .p-menuitem:not(.p-highlight):not(.p-disabled) > .p-menuitem-content:hover .p-menuitem-link .p-menuitem-icon,
-    .p-megamenu.p-megamenu-horizontal .p-megamenu-root-list > .p-menuitem:not(.p-highlight):not(.p-disabled) > .p-menuitem-content:hover .p-menuitem-link .p-submenu-icon {
+    .p-megamenu.p-megamenu-horizontal
+        .p-megamenu-root-list
+        > .p-menuitem:not(.p-highlight):not(.p-disabled)
+        > .p-menuitem-content:hover
+        .p-menuitem-link
+        .p-menuitem-icon,
+    .p-megamenu.p-megamenu-horizontal
+        .p-megamenu-root-list
+        > .p-menuitem:not(.p-highlight):not(.p-disabled)
+        > .p-menuitem-content:hover
+        .p-menuitem-link
+        .p-submenu-icon {
         color: #6c757d;
     }
 
@@ -5418,13 +5435,46 @@
         .p-menubar .p-menubar-root-list .p-submenu-list .p-menuitem .p-submenu-list .p-menuitem .p-menuitem-content .p-menuitem-link {
             padding-left: 3.75rem;
         }
-        .p-menubar .p-menubar-root-list .p-submenu-list .p-menuitem .p-submenu-list .p-menuitem .p-submenu-list .p-menuitem .p-menuitem-content .p-menuitem-link {
+        .p-menubar
+            .p-menubar-root-list
+            .p-submenu-list
+            .p-menuitem
+            .p-submenu-list
+            .p-menuitem
+            .p-submenu-list
+            .p-menuitem
+            .p-menuitem-content
+            .p-menuitem-link {
             padding-left: 5.25rem;
         }
-        .p-menubar .p-menubar-root-list .p-submenu-list .p-menuitem .p-submenu-list .p-menuitem .p-submenu-list .p-menuitem .p-submenu-list .p-menuitem .p-menuitem-content .p-menuitem-link {
+        .p-menubar
+            .p-menubar-root-list
+            .p-submenu-list
+            .p-menuitem
+            .p-submenu-list
+            .p-menuitem
+            .p-submenu-list
+            .p-menuitem
+            .p-submenu-list
+            .p-menuitem
+            .p-menuitem-content
+            .p-menuitem-link {
             padding-left: 6.75rem;
         }
-        .p-menubar .p-menubar-root-list .p-submenu-list .p-menuitem .p-submenu-list .p-menuitem .p-submenu-list .p-menuitem .p-submenu-list .p-menuitem .p-submenu-list .p-menuitem .p-menuitem-content .p-menuitem-link {
+        .p-menubar
+            .p-menubar-root-list
+            .p-submenu-list
+            .p-menuitem
+            .p-submenu-list
+            .p-menuitem
+            .p-submenu-list
+            .p-menuitem
+            .p-submenu-list
+            .p-menuitem
+            .p-submenu-list
+            .p-menuitem
+            .p-menuitem-content
+            .p-menuitem-link {
             padding-left: 8.25rem;
         }
         .p-menubar.p-menubar-mobile-active .p-menubar-root-list {
