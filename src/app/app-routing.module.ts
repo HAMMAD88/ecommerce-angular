@@ -26,6 +26,10 @@ const routes: Routes = [
             {
                 path: 'embroided',
                 loadChildren: () => import('./components/item-collection-modules/embroided/embroided.module').then((m) => m.EmbroidedModule)
+            },
+            {
+                path: 'cart',
+                loadChildren: () => import('./components/ecommerce/shopping-cart/shopping-cart.module').then((m) => m.ShoppingCartModule)
             }
         ]
     },
