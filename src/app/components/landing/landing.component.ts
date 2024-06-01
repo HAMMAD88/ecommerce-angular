@@ -8,8 +8,5 @@ import { environment } from '../../../environments/environment';
     styleUrl: './landing.component.scss'
 })
 export class LandingComponent {
-
-    ngOnInit(): void {
-
-    }
+    ngOnInit(): void {}
 }
