@@ -9,6 +9,8 @@ export class HeaderComponent implements OnInit {
     @Input() title: string = '';
     @Input() subTitle: string = '';
     @Input() description: string = '';
+    @Input() imageNumber: number = 9;
+    @Input() imageFormat: string = 'jpg';
 
     constructor() {}
 
