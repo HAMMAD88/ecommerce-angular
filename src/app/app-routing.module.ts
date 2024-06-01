@@ -30,6 +30,10 @@ const routes: Routes = [
             {
                 path: 'cart',
                 loadChildren: () => import('./components/ecommerce/shopping-cart/shopping-cart.module').then((m) => m.ShoppingCartModule)
+            },
+            {
+                path: 'checkout',
+                loadChildren: () => import('./components/ecommerce/checkoutform/checkoutform.module').then((m) => m.CheckoutFormModule)
             }
         ]
     },
