@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { environment } from '../../../../environments/environment';
 
 @Component({
@@ -6,6 +6,7 @@ import { environment } from '../../../../environments/environment';
     templateUrl: './productlist.component.html'
 })
 export class ProductListComponent {
+    @Input() showTopProducts: boolean = true;
     color1: string = 'Bluegray';
 
     products = [
