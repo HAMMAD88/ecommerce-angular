@@ -18,6 +18,11 @@ export class ProductOverviewComponent implements OnInit {
     quantity: number = 1;
 
     ngOnInit(): void {
-        this.images = ['product-overview-4-1.png', 'product-overview-4-2.png', 'product-overview-4-3.png'];
+        this.images = [
+            'product-overview-3-1.png',
+            'product-overview-3-2.png',
+            'product-overview-3-3.png',
+            'product-overview-3-4.png'
+        ];
     }
 }
