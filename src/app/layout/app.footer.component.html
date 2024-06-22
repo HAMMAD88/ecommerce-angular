@@ -1,27 +1,43 @@
-<div class="layout-footer flex-wrap gap-4 mx-4 justify-content-center lg:justify-content-between">
-    <div class="flex flex-column align-items-center">
-        <span class="pi pi-truck text-3xl text-primary"></span>
-        <span class="text-lg mt-2">Free Delivery</span>
-    </div>
+<div class="py-4 px-4 mx-0 mt-8 lg:mx-8">
+    <div class="grid justify-content-between">
+        <div
+            class="col-12 md:col-2"
+            style="margin-top: -1.5rem"
+        >
+            <a class="flex flex-wrap align-items-center justify-content-center md:justify-content-start md:mb-0 mb-3 cursor-pointer">
+                <img
+                    src="assets/layout/images/{{ layoutService.config().colorScheme === 'light' ? 'logo-dark' : 'logo-white' }}.svg"
+                    alt="footer sections"
+                    width="50"
+                    height="50"
+                    class="mr-2"
+                />
+                <span class="font-medium text-xl text-900">Mens Wear by AA</span>
+            </a>
+        </div>
 
-    <div class="flex flex-column align-items-center">
-        <span class="pi pi-box text-3xl text-primary"></span>
-        <span class="text-lg mt-2">Easy exchange and returns</span>
-    </div>
+        <div class="col-12 md:col-10 lg:col-7">
+            <div class="grid text-center md:text-left">
+                <div class="col-12 md:col-6">
+                    <h4 class="font-medium text-2xl line-height-3 mb-3 text-900">Company</h4>
+                    <a class="line-height-3 text-xl block cursor-pointer mb-2 text-700">About Us</a>
+                    <a class="line-height-3 text-xl block cursor-pointer mb-2 text-700">Akhlaq Ahmad</a>
+                    <a class="line-height-3 text-xl block cursor-pointer mb-2 text-700">+923217666007</a>
+                    <a class="line-height-3 text-xl block cursor-pointer mb-2 text-700">AA Fabrics, Gurdwara Gali no2 ghanta ghar Faisalabad, Punjab, Pakistan</a>
+                </div>
 
-    <div class="flex flex-column align-items-center">
-        <span class="pi pi-dollar text-3xl text-primary"></span>
-        <span class="text-lg mt-2">Budget Friendly</span>
+                <div class="col-12 md:col-6 mt-4 md:mt-0">
+                    <h4 class="font-medium text-2xl line-height-3 mb-3 text-900">Community</h4>
+                    <a class="line-height-3 text-xl block cursor-pointer mb-2 text-700">Facebook</a>
+                    <a class="line-height-3 text-xl block cursor-pointer mb-2 text-700"
+                        >Instagram<img
+                            src="assets/demo/images/landing/new-badge.svg"
+                            class="ml-2"
+                    /></a>
+                    <a class="line-height-3 text-xl block cursor-pointer mb-2 text-700">X <i>(formerly Twitter)</i></a>
+                    <a class="line-height-3 text-xl block cursor-pointer text-700">Daraz</a>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-
-<div class="layout-footer justify-content-center">
-    <img
-        src="assets/layout/images/{{ layoutService.config().colorScheme === 'light' ? 'logo-dark' : 'logo-white' }}.svg"
-        alt="Logo"
-        height="20"
-        class="mr-2"
-    />
-    <span class="font-medium ml-2">Mens Wear by AA</span>
-    <span class="font-medium ml-2">&copy;</span>
 </div>
