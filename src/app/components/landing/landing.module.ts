@@ -10,6 +10,8 @@ import { SharedModule } from '../shared/shared.module';
 import { LandingRoutingModule } from './landing-routing.module';
 import { LandingComponent } from './landing.component';
 import { ProductListModule } from '../ecommerce/productlist/productlist.module';
+import { StoreModule } from '@ngrx/store';
+import { dashboardProductsReducer } from './states/reducers/dashboard-products.reducer';
 
 @NgModule({
     imports: [
@@ -21,7 +23,8 @@ import { ProductListModule } from '../ecommerce/productlist/productlist.module';
         PanelModule,
         ButtonModule,
         SharedModule,
-        ProductListModule
+        ProductListModule,
+        StoreModule.forFeature('dashboardProducts', dashboardProductsReducer)
     ],
     declarations: [LandingComponent]
 })

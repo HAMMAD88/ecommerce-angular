@@ -1,6 +1,6 @@
 
 export interface AppState {
-    dashboardProducts: Product[],
+    dashboardProducts?: Product[],
     cart: Product[]
 }
 

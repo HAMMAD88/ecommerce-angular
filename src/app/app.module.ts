@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { AppLayoutModule } from './layout/app.layout.module';
 import { cartReducer } from './store/reducers/cart-reducer';
 import { AppState } from './store/state/app-state';
-import { dashboardProductsReducer } from './store/reducers/dashboard-products.reducer';
+import { dashboardProductsReducer } from './components/landing/states/reducers/dashboard-products.reducer';
 
 @NgModule({
     declarations: [AppComponent],
@@ -20,7 +20,6 @@ import { dashboardProductsReducer } from './store/reducers/dashboard-products.re
         CommonModule,
         StoreModule.forRoot<AppState>({
             cart: cartReducer,
-            dashboardProducts: dashboardProductsReducer
         }),
         StoreDevtoolsModule.instrument({
             maxAge: 25,
