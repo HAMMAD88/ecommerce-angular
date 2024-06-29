@@ -1,0 +1,108 @@
+[
+    {
+      "id": 1,
+      "imageUrl": "https://example.com/product1.jpg",
+      "category": "Electronics",
+      "price": 399.99,
+      "stock": 10,
+      "reviews": [
+        {
+          "name": "John Doe",
+          "rating": "5",
+          "comment": "Excellent product, works as expected.",
+          "title": "Great purchase!"
+        },
+        {
+          "name": "Jane Smith",
+          "rating": "4",
+          "comment": "Good value for money.",
+          "title": "Satisfied customer"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://example.com/product2.jpg",
+      "category": "Clothing",
+      "price": 49.99,
+      "stock": 25,
+      "reviews": [
+        {
+          "name": "Emily Johnson",
+          "rating": "3",
+          "comment": "Nice fabric but sizing runs small.",
+          "title": "Decent quality"
+        },
+        {
+          "name": "Michael Brown",
+          "rating": "2",
+          "comment": "Not worth the price, disappointed.",
+          "title": "Expected better"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://example.com/product3.jpg",
+      "category": "Home & Kitchen",
+      "price": 149.50,
+      "stock": 5,
+      "reviews": [
+        {
+          "name": "Sophia Wilson",
+          "rating": "4",
+          "comment": "Great addition to my kitchen!",
+          "title": "Very useful"
+        },
+        {
+          "name": "David Martinez",
+          "rating": "5",
+          "comment": "Highly recommended.",
+          "title": "Excellent product"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://example.com/product4.jpg",
+      "category": "Books",
+      "price": 19.95,
+      "stock": 15,
+      "reviews": [
+        {
+          "name": "Sarah Clark",
+          "rating": "5",
+          "comment": "Incredible read, couldn't put it down!",
+          "title": "Must-read book"
+        },
+        {
+          "name": "Robert Johnson",
+          "rating": "4",
+          "comment": "Well-written and thought-provoking.",
+          "title": "Impressive"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://example.com/product5.jpg",
+      "category": "Toys & Games",
+      "price": 29.99,
+      "stock": 20,
+      "reviews": [
+        {
+          "name": "Emma White",
+          "rating": "4",
+          "comment": "Fun for kids, good quality.",
+          "title": "Great toy!"
+        },
+        {
+          "name": "Daniel Brown",
+          "rating": "3",
+          "comment": "Expected more features for the price.",
+          "title": "Decent"
+        }
+      ]
+    }
+  ]
+  

@@ -9,7 +9,8 @@ import { AppComponent } from './app.component';
 import { AppLayoutModule } from './layout/app.layout.module';
 import { cartReducer } from './store/reducers/cart-reducer';
 import { AppState } from './store/state/app-state';
-import { dashboardProductsReducer } from './components/landing/states/reducers/dashboard-products.reducer';
+import { dashboardProductsReducer } from './components/landing/states/dashboard.reducer';
+import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
     declarations: [AppComponent],
@@ -21,6 +22,7 @@ import { dashboardProductsReducer } from './components/landing/states/reducers/d
         StoreModule.forRoot<AppState>({
             cart: cartReducer,
         }),
+        EffectsModule.forRoot(),
         StoreDevtoolsModule.instrument({
             maxAge: 25,
             logOnly: false,

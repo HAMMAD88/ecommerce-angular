@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { CarouselModel } from '../shared/carousel/carousel.component';
-import { environment } from '../../../environments/environment';
+import { Store } from '@ngrx/store';
+import { AppState } from '../../store/state/app-state';
+import { loadLandingPageProducts } from './states/dashboard.actions';
 
 @Component({
     selector: 'app-landing',
@@ -8,5 +9,10 @@ import { environment } from '../../../environments/environment';
     styleUrl: './landing.component.scss'
 })
 export class LandingComponent {
-    ngOnInit(): void {}
+
+    constructor(private store: Store<AppState>) {}
+
+    ngOnInit() {
+        this.store.dispatch(loadLandingPageProducts());    
+    }
 }

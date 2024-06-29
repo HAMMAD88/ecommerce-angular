@@ -1,6 +1,7 @@
+import { Dashboard } from "../../components/landing/states/dashboard.models"
 
 export interface AppState {
-    dashboardProducts?: Product[],
+    dashboard?: Dashboard,
     cart: Product[]
 }
 
