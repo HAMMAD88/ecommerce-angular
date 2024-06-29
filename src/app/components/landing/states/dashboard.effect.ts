@@ -18,8 +18,8 @@ export class DashboardEffect {
             ofType(loadLandingPageProducts),
             exhaustMap(() =>
                 this.fetchLandingPageProducts().pipe(
-                    map(products => setLandingPageProducts({ products })),
-                    catchError(error => {
+                    map((products) => setLandingPageProducts({ products })),
+                    catchError((error) => {
                         console.error('Error loading products:', error);
                         return of(fetchError());
                     })
