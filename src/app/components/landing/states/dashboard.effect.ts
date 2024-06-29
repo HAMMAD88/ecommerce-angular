@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { Observable, map, mergeMap } from 'rxjs';
+import { Observable, catchError, exhaustMap, map, of } from 'rxjs';
 import { fetchError } from '../../../store/actions/global.actions';
 import { Product } from '../../../store/state/app-state';
 import { loadLandingPageProducts, setLandingPageProducts } from './dashboard.actions';
@@ -16,12 +16,20 @@ export class DashboardEffect {
     loadProducts$ = createEffect(() =>
         this.actions$.pipe(
             ofType(loadLandingPageProducts),
-            mergeMap((action) => this.fetchLandingPageProducts().pipe(map((products) => this.dispatchProducts(action, products))))
+            exhaustMap(() =>
+                this.fetchLandingPageProducts().pipe(
+                    map(products => setLandingPageProducts({ products })),
+                    catchError(error => {
+                        console.error('Error loading products:', error);
+                        return of(fetchError());
+                    })
+                )
+            )
         )
     );
 
     fetchLandingPageProducts(): Observable<Product[]> {
-        return <any>this.http.get('assets/demo/demo-data/products.json');
+        return this.http.get<Product[]>('assets/demo/demo-data/products.json');
     }
 
     dispatchProducts(action: any, products: Product[]) {
